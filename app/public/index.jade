@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+        //base(href='/')
+        block title
+            title Guide
+        block link
+            link(rel="stylesheet" media="all" href="/css/stylesheet.css")
+            link(rel="stylesheet" media="all" href="/js/components/highlightjs/styles/zenburn.css")
+    body(ng-app="zekiApp")
+        block body
+            body
+                div(ng-view class="zekiApp")
+        script(type='text/javascript' src='/js/components/jquery/dist/jquery.min.js')
+        script(type='text/javascript' src='/js/components/angular/angular.min.js')
+        script(type='text/javascript' src='/js/components/angular-route/angular-route.min.js')
+        script(type="text/javascript" src="/js/config-route.min.js")
+        script(type="text/javascript" src="/js/filters/filters.min.js")
+
+        script(type="text/javascript" src="/js/controllers/main-controller.min.js")
+        script(type="text/javascript" src="/js/controllers/button-controller.min.js")
+        script(type="text/javascript" src="/js/controllers/icon-controller.min.js")
+
+        script(type="text/javascript" src="/js/components/highlightjs/highlight.pack.min.js")
+        script(type="text/javascript" src="/js/components/angular-highlightjs/angular-highlightjs.min.js")
+
+

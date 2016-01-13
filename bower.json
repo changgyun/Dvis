@@ -1,0 +1,27 @@
+{
+  "name": "sass",
+  "version": "0.0.1",
+  "homepage": "https://github.com/changgyun/template",
+  "authors": [
+    "ChangGyun Woo <cg25.woo@samsung.com>"
+  ],
+  "description": "sass",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "angular": "~1.3.3",
+    "angular-route": "~1.3.3",
+    "highlightjs": "~9.0.0",
+    "jquery": "~2.1.4",
+    "angular-highlightjs": "~0.5.1"
+  }
+}

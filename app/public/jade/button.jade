@@ -1,0 +1,79 @@
+extends layout/menu.layout
+block contents
+    h1 Button
+    p button desc
+    hr
+    h2 Basics
+    p Basics desc
+    div(hljs).
+            /* Anchors (links) */
+            a(href="about.html" class="button") Anchors
+
+            /* Buttons (actions) */
+            button(type="button" class="success button") success
+            button(type="button" class="alert button") alert
+    a(href="about.html" class="button") Anchors
+    button(type="button" class="success button" ng-click="toggle()") success
+    button(type="button" class="alert button") alert
+    hr
+    h2 Sizing
+    p Sizing desc
+    div(hljs).
+            button(type="button" class="tiny button") So Tiny
+            button(type="button" class="small button") So Small
+            button(type="button" class="button") So Basic
+            button(type="button" class="large button") So Large
+            button(type="button" class="expanded button") Such Expand
+            button(type="button" class="small expanded button") Wow, Small Expand
+    button(type="button" class="tiny button") So Tiny
+    button(type="button" class="small button") So Small
+    button(type="button" class="button") So Basic
+    button(type="button" class="large button") So Large
+    button(type="button" class="expanded button") Such Expand
+    button(type="button" class="small expanded button") Wow, Small Expand
+    hr
+    h2 Coloring
+    p Coloring desc
+    div(hljs).
+            button(type="button" class="button") primary
+            button(type="button" class="secondary button") Secondary
+            button(type="button" class="success button") Success
+            button(type="button" class="alert button") Alert
+            button(type="button" class="warning button") Warning
+            button(type="button" class="disabled button") Disabled
+    button(type="button" class="button") primary
+    button(type="button" class="secondary button") Secondary
+    button(type="button" class="success button") Success
+    button(type="button" class="alert button") Alert
+    button(type="button" class="warning button") Warning
+    button(type="button" class="disabled button") Disabled
+    hr
+    h2 Hollow Style
+    p Hollow Style desc
+    div(hljs).
+            button(type="button" class="hollow button") primary
+            button(type="button" class="hollow secondary button") Secondary
+            button(type="button" class="hollow success button") Success
+            button(type="button" class="hollow alert button") Alert
+            button(type="button" class="hollow warning button") Warning
+            button(type="button" class="hollow disabled button") Disabled
+    button(type="button" class="hollow button") primary
+    button(type="button" class="hollow secondary button") Secondary
+    button(type="button" class="hollow success button") Success
+    button(type="button" class="hollow alert button") Alert
+    button(type="button" class="hollow warning button") Warning
+    button(type="button" class="hollow disabled button") Disabled
+    hr
+    h2 Dropdown Arrows Style
+    p Dropdown Arrows Style desc
+    div(hljs).
+            button(type="button" class="tiny dropdown button") Dropdown Button
+            button(type="button" class="small dropdown button") Dropdown Button
+            button(type="button" class="dropdown button") Dropdown Button
+            button(type="button" class="large dropdown button") Dropdown Button
+            button(type="button" class="expanded dropdown button") Dropdown Button
+    button(type="button" class="tiny dropdown button") Dropdown Button
+    button(type="button" class="small dropdown button") Dropdown Button
+    button(type="button" class="dropdown button") Dropdown Button
+    button(type="button" class="large dropdown button") Dropdown Button
+    button(type="button" class="expanded dropdown button") Dropdown Button
