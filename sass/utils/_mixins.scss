@@ -1,0 +1,38 @@
+////
+/// @_mixins
+////
+
+@mixin css-triangle(
+$triangle-size,
+$triangle-color,
+$triangle-direction
+) {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border: inset $triangle-size;
+
+  @if ($triangle-direction == down) {
+    border-color: $triangle-color transparent transparent;
+    border-top-style: solid;
+  }
+  @if ($triangle-direction == up) {
+    border-color: transparent transparent $triangle-color;
+    border-bottom-style: solid;
+  }
+  @if ($triangle-direction == right) {
+    border-color: transparent transparent transparent $triangle-color;
+    border-left-style: solid;
+  }
+  @if ($triangle-direction == left) {
+    border-color: transparent $triangle-color transparent transparent;
+    border-right-style: solid;
+  }
+}
+
+@mixin disable-mouse-outline {
+  [data-whatinput='mouse'] & {
+    outline: 0;
+  }
+}

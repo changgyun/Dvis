@@ -1,0 +1,39 @@
+html {
+  background: #6a6c6a;
+}
+.guide_container {
+  box-sizing: border-box;
+  padding-left: 224px;
+  .columns {
+    float: left;
+    &.menu {
+      position: fixed;
+      left:0;
+      color: #fff;
+      width: 224px;
+      height: 100%;
+      padding: 20px;
+      font-size: 12px;
+      a:link, a:visited {color: #fff;text-decoration: none}
+      a:hover {color: #fff;text-decoration: underline}
+    }
+    &.contents {
+      background: #fff;
+      width: 100%;
+      padding: 20px;
+    }
+  }
+}
+
+//grid
+.grid {
+  padding: 1%;
+  background-color: #f6f7f8;
+}
+.grid [class^="col-"] {
+  background-color: #e4e5e7;
+  color: #767779;
+  padding: 3px;
+  text-align: center;
+}
+
