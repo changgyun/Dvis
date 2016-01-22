@@ -128,58 +128,58 @@ d3.csv('../js/ndx.csv', function (data) {
     var dayOfWeekGroup = dayOfWeek.group();
 
     /*yearlyBubbleChart *//* dc.bubbleChart('#yearly-bubble-chart', 'chartGroup') *//*
-        .width(990)
-        .height(250)
-        .transitionDuration(1500)
-        .margins({top: 10, right: 50, bottom: 30, left: 40})
-        .dimension(yearlyDimension)
-        .group(yearlyPerformanceGroup)
-        .colors(colorbrewer.RdYlGn[9])
-        .colorDomain([-500, 500])
+     .width(990)
+     .height(250)
+     .transitionDuration(1500)
+     .margins({top: 10, right: 50, bottom: 30, left: 40})
+     .dimension(yearlyDimension)
+     .group(yearlyPerformanceGroup)
+     .colors(colorbrewer.RdYlGn[9])
+     .colorDomain([-500, 500])
 
-        .colorAccessor(function (d) {
-            return d.value.absGain;
-        })
-        .keyAccessor(function (p) {
-            return p.value.absGain;
-        })
-        .valueAccessor(function (p) {
-            return p.value.percentageGain;
-        })
-        .radiusValueAccessor(function (p) {
-            return p.value.fluctuationPercentage;
-        })
-        .maxBubbleRelativeSize(0.3)
-        .x(d3.scale.linear().domain([-2500, 2500]))
-        .y(d3.scale.linear().domain([-100, 100]))
-        .r(d3.scale.linear().domain([0, 4000]))
+     .colorAccessor(function (d) {
+     return d.value.absGain;
+     })
+     .keyAccessor(function (p) {
+     return p.value.absGain;
+     })
+     .valueAccessor(function (p) {
+     return p.value.percentageGain;
+     })
+     .radiusValueAccessor(function (p) {
+     return p.value.fluctuationPercentage;
+     })
+     .maxBubbleRelativeSize(0.3)
+     .x(d3.scale.linear().domain([-2500, 2500]))
+     .y(d3.scale.linear().domain([-100, 100]))
+     .r(d3.scale.linear().domain([0, 4000]))
 
-        .elasticY(true)
-        .elasticX(true)
-        .yAxisPadding(100)
-        .xAxisPadding(500)
-        .renderHorizontalGridLines(true)
-        .renderVerticalGridLines(true)
-        .xAxisLabel('Index Gain')
-        .yAxisLabel('Index Gain %')
+     .elasticY(true)
+     .elasticX(true)
+     .yAxisPadding(100)
+     .xAxisPadding(500)
+     .renderHorizontalGridLines(true)
+     .renderVerticalGridLines(true)
+     .xAxisLabel('Index Gain')
+     .yAxisLabel('Index Gain %')
 
-        .renderLabel(true)
-        .label(function (p) {
-            return p.key;
-        })
-        .renderTitle(true)
-        .title(function (p) {
-            return [
-                p.key,
-                'Index Gain: ' + numberFormat(p.value.absGain),
-                'Index Gain in Percentage: ' + numberFormat(p.value.percentageGain) + '%',
-                'Fluctuation / Index Ratio: ' + numberFormat(p.value.fluctuationPercentage) + '%'
-            ].join('\n');
-        })
+     .renderLabel(true)
+     .label(function (p) {
+     return p.key;
+     })
+     .renderTitle(true)
+     .title(function (p) {
+     return [
+     p.key,
+     'Index Gain: ' + numberFormat(p.value.absGain),
+     'Index Gain in Percentage: ' + numberFormat(p.value.percentageGain) + '%',
+     'Fluctuation / Index Ratio: ' + numberFormat(p.value.fluctuationPercentage) + '%'
+     ].join('\n');
+     })
 
-        .yAxis().tickFormat(function (v) {
-            return v + '%';
-        });*/
+     .yAxis().tickFormat(function (v) {
+     return v + '%';
+     });*/
 
     gainOrLossChart /* dc.pieChart('#gain-loss-chart', 'chartGroup') */
         .width(180)
@@ -197,15 +197,15 @@ d3.csv('../js/ndx.csv', function (data) {
             }
             return label;
         })
-        ;
+    ;
 
     /*quarterChart *//* dc.pieChart('#quarter-chart', 'chartGroup') *//*
-        .width(180)
-        .height(180)
-        .radius(80)
-        .innerRadius(30)
-        .dimension(quarter)
-        .group(quarterGroup);*/
+     .width(180)
+     .height(180)
+     .radius(80)
+     .innerRadius(30)
+     .dimension(quarter)
+     .group(quarterGroup);*/
 
     dayOfWeekChart /* dc.rowChart('#day-of-week-chart', 'chartGroup') */
         .width(180)
