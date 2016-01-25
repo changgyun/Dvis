@@ -5,31 +5,26 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../bower_components/dcjs/dc.min.css"/>
     <style>
-        #sentiment-chart {
-            width:100%;
-
-            /* flexbox specific properties */
-            display: -webkit-flex;
-            display: flex;
-            -webkit-flex-direction: row;
-            flex-direction: row;
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
         }
 
-        #sentiment-chart div{
-            flex:1;
-            height:20px;
+        .browser text {
+            text-anchor: end;
         }
     </style>
 </head>
 <body>
 
-<h2>sentiment-chart</h2>
+<h2>sentiment-line-chart</h2>
 <hr>
 
 <div class="container">
-
     <div class="row">
-        <div id="sentiment-chart"></div>
+        <div id="sentiment-line-chart"></div>
     </div>
 
 </div>
@@ -45,7 +40,7 @@
 <script type="text/javascript" src="../bower_components/d3-tip/index.js"></script>
 
 <!-- page JavaScript -->
-<script type="text/javascript" src="../js/sentiment-analysis-chart.js"></script>
+<script type="text/javascript" src="../js/sentiment-analysis-line-chart.js"></script>
 
 </body>
 </html>
