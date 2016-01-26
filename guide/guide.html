@@ -11,41 +11,44 @@
         <div class="small-3 columns menu ng-scope">
             <h3>MA publishing guide v0.1</h3>
             <ul>
+                <li><a href="#grid">Grid</a></li>
+                <li><a href="#table">Table</a></li>
+                <li><a href="#button">Button</a></li>
+                <li>----------------------------</li>
                 <li>General
                     <ul>
-                        <li><a href="#grid">Grid</a></li>
-                        <li><a href="#/partials/icons">Icons</a></li>
+
                     </ul>
                 </li>
-                <li><a href="">Layout
-                </a><ul><a href="">
-                </a><li><a href=""></a><a href="">Dropdown</a></li>
-                    <li><a href="">Modal</a></li>
-                    <li><a href="">Table</a></li>
-                    <li><a href="">Tabs</a></li>
-                </ul></li>
-                <li><a href="">Form
-                </a><ul><a href="">
-                </a><li><a href=""></a><a href="">Textbox</a></li>
-                    <li><a href="">Textarea</a></li>
-                    <li><a href="">Radio</a></li>
-                    <li><a href="">Checkbox</a></li>
-                    <li><a href="">Combobox</a></li>
-                    <li><a href="">File upload</a></li>
-                    <li><a href="">Validation</a></li>
-                </ul></li>
-                <li><a href="">Element</a><ul>
-                    <li><a href="#button">Button</a></li>
-                    <li><a href="/public/dist/html/button-group.html">Button Group</a></li>
-                    <li><a href="">Badge</a></li>
-                </ul></li>
+                <li>Layout
+                    <ul>
+
+                    </ul>
+                </li>
+                <li>Form
+                    <ul>
+                        <li><a href=""></a><a href="">Textbox</a></li>
+                        <li><a href="">Textarea</a></li>
+                        <li><a href="">Radio</a></li>
+                        <li><a href="">Checkbox</a></li>
+                        <li><a href="">Combobox</a></li>
+                        <li><a href="">File upload</a></li>
+                        <li><a href="">Validation</a></li>
+                    </ul>
+                </li>
+                <li>Element
+                    <ul>
+
+                        <li><a href="">Badge</a></li>
+                    </ul>
+                </li>
                 <li>Component
                     <ul>
+
+                        <li><a href="">Tabs</a></li>
                         <li><a href="">Alert</a></li>
-                        <li><a href="">Slider</a></li>
                         <li><a href="">Loader</a></li>
                         <li><a href="">Progress</a></li>
-                        <li><a href="">Swich</a></li>
                     </ul>
                 </li>
                 <li>Navigation
@@ -54,61 +57,537 @@
                         <li><a href="">Breadcrumbs</a></li>
                     </ul>
                 </li>
+                <li><a href=""></a><a href="">Dropdown</a></li>
+                <li><a href="">Modal</a></li>
+                <li><a href="#/partials/icons">Icons</a></li>
             </ul>
         </div>
         <div class="small-9 columns contents ng-scope">
 
             <section id="grid" class="section">
                 <h1>Grid</h1>
-                <p>Grid desc</p>
                 <hr>
-                <h2>Basics</h2>
-                <p>Basics desc</p>
-<pre><code>&lt;div class="row"&gt;
-    &lt;div class="col-1">col-1&lt;/div&gt;
-    ...
-&lt;/div&gt;
-
+                <h2>Fluid</h2>
+                <div class="grid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="box">col-sm-12</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="box">col-sm-3</div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="box">col-sm-9</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="box">col-sm-6</div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="box">col-sm-6</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <div class="box">col-sm-9</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="box">col-sm-3</div>
+                        </div>
+                    </div>
+                </div>
+<pre><code class="html">//Fluid
 &lt;div class="row"&gt;
-    &lt;div class="col-3">col-3&lt;/div&gt;
-    &lt;div class="col-6">col-6&lt;/div&gt;
-    &lt;div class="col-3">col-3&lt;/div&gt;
+    &lt;div class="col-sm-12"&gt;
+        &lt;div class="box"&gt;col-sm-12&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;div class="row"&gt;
-    &lt;div class="col-3">col-3&lt;/div&gt;
-    &lt;div class="col-9">col-9&lt;/div&gt;
+    &lt;div class="col-sm-3"&gt;
+        &lt;div class="box"&gt;col-sm-3&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-sm-9"&gt;
+        &lt;div class="box"&gt;col-sm-9&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+    &lt;div class="col-sm-6"&gt;
+        &lt;div class="box"&gt;col-sm-6&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-sm-6"&gt;
+        &lt;div class="box"&gt;col-sm-6&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+    &lt;div class="col-sm-9"&gt;
+        &lt;div class="box"&gt;col-sm-9&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-sm-3"&gt;
+        &lt;div class="box"&gt;col-sm-3&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
+
+            <h2>Offsets</h2>
                 <div class="grid">
                     <div class="row">
-                        <div class="col-1">col-1</div>
-                        <div class="col-1">col-1</div>
-                        <div class="col-1">col-1</div>
-                        <div class="col-1">col-1</div>
-                        <div class="col-1">col-1</div>
-                        <div class="col-1">col-1</div>
-                        <div class="col-1">col-1</div>
-                        <div class="col-1">col-1</div>
-                        <div class="col-1">col-1</div>
-                        <div class="col-1">col-1</div>
-                        <div class="col-1">col-1</div>
-                        <div class="col-1">col-1</div>
+                        <div class="col-sm-offset-9 col-sm-3">
+                            <div class="box">col-sm-offset-9</div>
+                        </div>
                     </div>
-                </div>
-                <div class="grid">
                     <div class="row">
-                        <div class="col-3">col-3</div>
-                        <div class="col-6">col-6</div>
-                        <div class="col-3">col-3</div>
+                        <div class="col-sm-offset-6 col-sm-6">
+                            <div class="box">col-sm-offset-6</div>
+                        </div>
                     </div>
-                </div>
-                <div class="grid">
                     <div class="row">
-                        <div class="col-3">col-3</div>
-                        <div class="col-9">col-9</div>
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <div class="box">col-sm-offset-3</div>
+                        </div>
                     </div>
                 </div>
+<pre><code class="html">//Offsets
+&lt;div class="row"&gt;
+    &lt;div class="col-sm-offset-9 col-sm-3"&gt;
+            &lt;div class="box"&gt;col-sm-offset-9&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+    &lt;div class="col-sm-offset-6 col-sm-6"&gt;
+        &lt;div class="box"&gt;col-sm-offset-6&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+    &lt;div class="col-sm-offset-3 col-sm-9"&gt;
+        &lt;div class="box"&gt;col-sm-offset-3&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+            <h2>Nested Grids</h2>
+            <div class="grid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="box box-container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="box-first box-container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="box-nested">box-nested</div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <div class="box-nested">box-nested</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<pre><code class="html">//Nested Grids
+&lt;div class="row"&gt;
+    &lt;div class="col-sm-12"&gt;
+        &lt;div class="box box-container"&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="col-sm-12"&gt;
+                    &lt;div class="box-first box-container"&gt;
+                        &lt;div class="row"&gt;
+                            &lt;div class="col-sm-4"&gt;
+                                &lt;div class="box-nested"&gt;box-nested&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col-sm-8"&gt;
+                                &lt;div class="box-nested"&gt;box-nested&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+            <h2>Alignment</h2>
+
+            <div class="grid">
+                <div class="row start-sm">
+                    <div class="col-sm-6">
+                        <div class="box">
+                            start
+                        </div>
+                    </div>
+                </div>
+                <div class="row center-sm">
+                    <div class="col-sm-6">
+                        <div class="box">
+                            center
+                        </div>
+                    </div>
+                </div>
+                <div class="row end-sm">
+                    <div class="col-sm-6">
+                        <div class="box">
+                            end
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="row top-sm">
+                    <div class="col-sm-6">
+                        <div class="box-large">box</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="box">top</div>
+                    </div>
+                </div>
+                <div class="row middle-sm">
+                    <div class="col-sm-6">
+                        <div class="box-large">box</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="box">middle</div>
+                    </div>
+                </div>
+                <div class="row bottom-sm">
+                    <div class="col-sm-6">
+                        <div class="box-large">box</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="box">bottom</div>
+                    </div>
+                </div>
+            </div>
+
+<pre><code class="html">//Alignment
+&lt;div class="grid"&gt;
+    &lt;div class="row start-sm"&gt;
+        &lt;div class="col-sm-6"&gt;
+            &lt;div class="box"&gt;
+                start
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row center-sm"&gt;
+        &lt;div class="col-sm-6"&gt;
+            &lt;div class="box"&gt;
+                center
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row end-sm"&gt;
+        &lt;div class="col-sm-6"&gt;
+            &lt;div class="box"&gt;
+                end
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="grid"&gt;
+    &lt;div class="row top-sm"&gt;
+        &lt;div class="col-sm-6"&gt;
+            &lt;div class="box-large"&gt;box&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-sm-6"&gt;
+            &lt;div class="box"&gt;top&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row middle-sm"&gt;
+        &lt;div class="col-sm-6"&gt;
+            &lt;div class="box-large"&gt;box&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-sm-6"&gt;
+            &lt;div class="box"&gt;middle&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row bottom-sm"&gt;
+        &lt;div class="col-sm-6"&gt;
+            &lt;div class="box-large"&gt;box&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-sm-6"&gt;
+            &lt;div class="box"&gt;bottom&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+            <h2>Distribution</h2>
+            <div class="grid">
+                <div class="row around-sm">
+                    <div class="col-sm-2">
+                        <div class="box">
+                            around
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="box">
+                            around
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="box">
+                            around
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="row between-sm">
+                    <div class="col-sm-2">
+                        <div class="box">
+                            between
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="box">
+                            between
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="box">
+                            between
+                        </div>
+                    </div>
+                </div>
+            </div>
+<pre><code class="html">//Alignment
+&lt;div class="grid"&gt;
+    &lt;div class="row around-sm"&gt;
+        &lt;div class="col-sm-2"&gt;
+            &lt;div class="box"&gt;
+                around
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-sm-2"&gt;
+            &lt;div class="box"&gt;
+                around
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-sm-2"&gt;
+            &lt;div class="box"&gt;
+                around
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="grid"&gt;
+    &lt;div class="row between-sm"&gt;
+        &lt;div class="col-sm-2"&gt;
+            &lt;div class="box"&gt;
+                between
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-sm-2"&gt;
+            &lt;div class="box"&gt;
+                between
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="col-sm-2"&gt;
+            &lt;div class="box"&gt;
+                between
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+            </section>
+
+            <section id="table" class="section">
+                <h1>Table</h1>
+                <hr>
+                <h2>Basics</h2>
+                <div class="table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Table Header</th>
+                            <th>Table Header</th>
+                            <th>Table Header</th>
+                            <th>Table Header</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Content Goes Here</td>
+                            <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                            <td>Content Goes Here</td>
+                            <td>Content Goes Here</td>
+                        </tr>
+                        <tr>
+                            <td>Content Goes Here</td>
+                            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                            <td>Content Goes Here</td>
+                            <td>Content Goes Here</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+<pre><code class="html">//default table
+&lt;table&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+            <h2>Hover</h2>
+            <div class="table">
+                <table class="hover">
+                    <thead>
+                    <tr>
+                        <th>Table Header</th>
+                        <th>Table Header</th>
+                        <th>Table Header</th>
+                        <th>Table Header</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Content Goes Here</td>
+                        <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                        <td>Content Goes Here</td>
+                        <td>Content Goes Here</td>
+                    </tr>
+                    <tr>
+                        <td>Content Goes Here</td>
+                        <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                        <td>Content Goes Here</td>
+                        <td>Content Goes Here</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+<pre><code class="html">//Hover table
+&lt;table class="hover"&gt;
+    &lt;thead&gt;
+    ...
+</code></pre>
+                <h2>Scroll</h2>
+                <div class="table">
+                    <table class="scroll">
+                        <thead>
+                        <tr>
+                            <th>Table Header</th>
+                            <th>Table Header</th>
+                            <th>Table Header</th>
+                            <th>Table Header</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Content Goes Here</td>
+                            <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                            <td>Content Goes Here</td>
+                            <td>Content Goes Here</td>
+                        </tr>
+                        <tr>
+                            <td>Content Goes Here</td>
+                            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                            <td>Content Goes Here</td>
+                            <td>Content Goes Here</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+<pre><code class="html">//scroll table
+    &lt;table class="scroll"&gt;
+    &lt;thead&gt;
+    ...
+</code></pre>
+                <h2>stack</h2>
+                <div class="table">
+                    <table class="stack">
+                        <thead>
+                        <tr>
+                            <th>Table Header</th>
+                            <th>Table Header</th>
+                            <th>Table Header</th>
+                            <th>Table Header</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Content Goes Here</td>
+                            <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                            <td>Content Goes Here</td>
+                            <td>Content Goes Here</td>
+                        </tr>
+                        <tr>
+                            <td>Content Goes Here</td>
+                            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                            <td>Content Goes Here</td>
+                            <td>Content Goes Here</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+<pre><code class="html">//default table
+    &lt;table class="stack"&gt;
+    &lt;thead&gt;
+    ...
+</code></pre>
+                <h2>align</h2>
+                <div class="table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th class="left">1</th>
+                            <th class="center">2</th>
+                            <th class="right">3</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="right">1</td>
+                            <td class="center">2</td>
+                            <td class="left">3</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+<pre><code class="html">//align table
+&lt;table&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th class="left"&gt;1&lt;/th&gt;
+        &lt;th class="center"&gt;2&lt;/th&gt;
+        &lt;th class="right"&gt;3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td class="right"&gt;1&lt;/td&gt;
+        &lt;td class="center"&gt;2&lt;/td&gt;
+        &lt;td class="left"&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+
             </section>
 
             <section id="button" class="section">
@@ -117,7 +596,7 @@
                 <hr>
                 <h2>Basics</h2>
                 <p>Basics desc</p>
-                <pre><code>&lt;button type="button" class="tiny button"&gt; So Tiny &lt;/button&gt;</code></pre>
+                <pre><code class="html">&lt;button type="button" class="tiny button"&gt; So Tiny &lt;/button&gt;</code></pre>
                 <a href="about.html" class="button">Anchors</a>
                 <button type="button" ng-click="toggle()" class="success button">success</button>
                 <button type="button" class="alert button">alert</button>

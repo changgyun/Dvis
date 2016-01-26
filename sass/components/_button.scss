@@ -142,7 +142,7 @@ $style: $button-fill
   }
 }
 
-@mixin zeki-button {
+@mixin suf-button {
   .button {
     @include button;
 
@@ -153,7 +153,7 @@ $style: $button-fill
     &.expanded { @include button-expand; }
 
     // Colors
-    @each $name, $color in $zeki-colors {
+    @each $name, $color in $ma-colors {
       @if $button-fill != hollow {
         &.#{$name} {
           @include button-style($color, auto);
@@ -176,7 +176,7 @@ $style: $button-fill
         @include button-hollow;
         @include button-hollow-style;
 
-        @each $name, $color in $zeki-colors {
+        @each $name, $color in $ma-colors {
           &.#{$name} {
             @include button-hollow-style($color);
           }
@@ -209,3 +209,5 @@ $style: $button-fill
     }
   }
 }
+
+@include suf-button;

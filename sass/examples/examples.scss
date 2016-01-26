@@ -29,11 +29,33 @@ html {
 .grid {
   padding: 1%;
   background-color: #f6f7f8;
-}
-.grid [class^="col-"] {
-  background-color: #e4e5e7;
-  color: #767779;
-  padding: 3px;
-  text-align: center;
+  .row{
+    padding: 5px;
+    font-size: 11px;
+    .box {
+      background-color: #e4e5e7;
+      color: #767779;
+      padding: 3px;
+      text-align: center;
+      min-height: 18px;
+      .box-nested {
+        background-color: #c5c6c8;
+        color: #767779;
+        padding: 3px;
+        text-align: center;
+        min-height: 18px;
+      }
+    }
+    .box-large {
+      padding: 1rem;
+      background-color: #e4e5e7;
+    }
+  }
 }
 
+
+//TABLE
+.table {
+  background-color: #202b33;
+  padding: 3%;
+}

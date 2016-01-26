@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../bower_components/dcjs/dc.min.css"/>
+    <style>
+        #sentiment-chart {
+            width:100%;
+
+            /* flexbox specific properties */
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+        }
+
+        #sentiment-chart div{
+            flex:1;
+            height:20px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>sentiment-chart</h2>
+<hr>
+
+<div class="container">
+
+    <div class="row">
+        <div id="sentiment-chart"></div>
+    </div>
+
+</div>
+
+<!-- Jquery JavaScript -->
+<script type="text/javascript" src="../../bower_components/jquery/dist/jquery.min.js"></script>
+
+<!-- d3 JavaScript -->
+<script type="text/javascript" src="../../bower_components/d3/d3.min.js"></script>
+<script type="text/javascript" src="../../bower_components/crossfilter/crossfilter.min.js"></script>
+<script type="text/javascript" src="../../bower_components/colorbrewer/colorbrewer.js"></script>
+<script type="text/javascript" src="../../bower_components/d3-tip/index.js"></script>
+
+<!-- d3 custom -->
+<script type="text/javascript" src="../../js/components/dc.js"></script>
+
+<!-- page JavaScript -->
+<script type="text/javascript" src="../../js/chart/sentiment-analysis-chart.js"></script>
+
+</body>
+</html>

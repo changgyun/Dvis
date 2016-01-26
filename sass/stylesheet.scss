@@ -19,10 +19,10 @@
 /// Components
 @import "components/button";
 @import "components/grid";
+@import "components/table";
 //@import "components/icons";
 
 /// examples
 @import "examples/examples";
 
-@include ma-global-styles;
-@include zeki-button;
+@include suf-global-styles;

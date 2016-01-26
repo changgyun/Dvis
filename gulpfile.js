@@ -16,7 +16,8 @@ gulp.task('test', ['sass','resource','watch','server:start']);
 
 gulp.task('sass', function() {
     return gulp.src(['./sass/stylesheet.scss'])
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        //.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest(src.dist + 'css'))
         .pipe(reload({ stream:true }));
 });
