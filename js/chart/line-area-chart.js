@@ -1,6 +1,6 @@
 'use strict';
 
-var moveChart = dc.lineChart('#monthly-move-chart');
+var moveChart = dc.lineChart('#monthly-move-chart').interpolate("basis")
 
 //d3.json('data.json', function(data) {...};
 d3.csv('../../js/chart/data.csv', function (data) {
@@ -59,7 +59,7 @@ d3.csv('../../js/chart/data.csv', function (data) {
         .width(moveChartWidth)
         .height(300)
         .transitionDuration(1000)
-        .margins({top: 20, right: 6, bottom: 20, left: 20})
+        .margins({top: 20, right: 6, bottom: 30, left: 20})
         .dimension(moveMonths)
         .mouseZoomable(true)
         .rangeChart(moveChart)
@@ -67,14 +67,14 @@ d3.csv('../../js/chart/data.csv', function (data) {
         .round(d3.time.month.round)
         .xUnits(d3.time.months)
         .elasticY(true)
-        .renderHorizontalGridLines(true)
+        .renderVerticalGridLines(true)
         .legend(dc.legend().x(moveChartWidth-100).y(10).itemHeight(13).gap(5))
         .brushOn(false)
         .group(indexAvgByMonthGroup, 'color Type01')
         .valueAccessor(function (d) {
             return d.value.avg;
         })
-        .stack(monthlyMoveGroup, 'color Type02', function (d) {
+       /* .stack(monthlyMoveGroup, 'color Type02', function (d) {
             return d.value;
         })
         .stack(monthlyMoveGroup, 'color Type03', function (d) {
@@ -82,7 +82,7 @@ d3.csv('../../js/chart/data.csv', function (data) {
         })
         .stack(monthlyMoveGroup, 'color Type04', function (d) {
             return d.value;
-        })
+        })*/
         .title(function (d) {
             var value = d.value.avg ? d.value.avg : d.value;
             if (isNaN(value)) {

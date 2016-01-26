@@ -5,11 +5,39 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../../bower_components/dcjs/dc.min.css"/>
     <style>
+        #monthly-move-chart g.y {
+            display: none;
+        }
         #monthly-move-chart {
             width: 100%;
         }
         #monthly-move-chart svg{
             width: 100%;
+        }
+        #monthly-move-chart.dc-chart path.line {
+            stroke: rgb(205, 35, 97);
+            stroke-width: 2px;
+        }
+        #monthly-move-chart svg{
+            width: 100%;
+            background-color: #13232e;
+        }
+        #monthly-move-chart.dc-chart path.area {
+            fill-opacity: .3;
+            stroke: none;
+            fill: #cd2361
+        }
+        #monthly-move-chart.dc-chart g.axis text {
+            fill: #506577;
+        }
+        #monthly-move-chart.dc-chart .axis line, .dc-chart .axis path {
+            fill: none;
+            stroke: #cd2361;
+            stroke-width: 2px;
+            shape-rendering: crispEdges;
+        }
+        #monthly-move-chart.dc-chart .axis.x .tick{
+
         }
     </style>
 </head>
