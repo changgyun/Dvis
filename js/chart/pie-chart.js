@@ -18,7 +18,6 @@ d3.csv('../../js/chart/data.csv', function (data) {
     var all = ndx.groupAll();
 
     var gainOrLoss = ndx.dimension(function (d) {
-        //return d.open > d.close ? 'Loss' : 'Gain';
         var day = d.dd.getDay();
         var name = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
         return day + '.' + name[day];
@@ -37,15 +36,15 @@ d3.csv('../../js/chart/data.csv', function (data) {
     gainOrLossChart /* dc.pieChart('#gain-loss-chart', 'chartGroup') */
         .width(pieChartWidth)
         .height(pieChartWidth)
-        .radius(pieChartWidth/3)
-        .innerRadius(20)
-        .slicesCap(4)
-        .externalLabels(60)
-        .externalRadiusPadding(50)
+        .radius(pieChartWidth/4)
+        .innerRadius(pieChartWidth/4.9)
+        .slicesCap(3)
+        .externalLabels(70)
+        .externalRadiusPadding(0)
         .drawPaths(true)
         .dimension(gainOrLoss)
         .group(gainOrLossGroup)
-        .legend(dc.legend())
+        //.legend(dc.legend())
         .label(function (d) {
             if (gainOrLossChart.hasFilter() && !gainOrLossChart.hasFilter(d.key)) {
                 return d.key + '(0%)';
